@@ -4,81 +4,103 @@ body {
   background-color: #f2f4f7;
   color: #333;
 }
+
 header {
+  text-align: center;
   background-color: #003366;
   color: white;
-  text-align: center;
   padding: 25px;
 }
+
 header h1 {
   margin: 0;
-  font-size: 35px;
+  font-size: 36px;
 }
+
 header p {
-  font-size: 18px;
+  font-size: 16px;
+  margin-top: 5px;
 }
+
 main {
   width: 80%;
   margin: 25px auto;
 }
-section {
+
+.card {
   background-color: white;
   margin-bottom: 20px;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
-section h2 {
+
+.card h2 {
   color: #003366;
   border-bottom: 2px solid #0066cc;
   padding-bottom: 8px;
+  margin-bottom: 15px;
 }
+
 .profile {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
+
 .profile img {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 4px solid #0066cc;
+  border: 3px solid #0066cc;
   object-fit: cover;
 }
+
 .details p {
-  margin: 10px 0;
+  margin: 8px 0;
 }
+
 .details strong {
-  display: inline-block;
-  width: 150px;
   color: #003366;
+  width: 150px;
+  display: inline-block;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin-top: 10px;
 }
+
 th, td {
   border: 1px solid #ccc;
-  padding: 12px;
+  padding: 10px;
   text-align: center;
 }
+
 th {
   background-color: #003366;
   color: white;
 }
+
 tr:nth-child(even) {
   background-color: #f0f5fa;
 }
+
 ul {
   line-height: 1.8;
+  margin-left: 20px;
 }
+
 footer {
   background-color: #003366;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  margin-top: 30px;
 }
+
 @media (max-width: 600px) {
   main {
     width: 90%;
@@ -90,8 +112,5 @@ footer {
   .details strong {
     display: block;
     width: auto;
-  }
-  table {
-    font-size: 12px;
   }
 }
