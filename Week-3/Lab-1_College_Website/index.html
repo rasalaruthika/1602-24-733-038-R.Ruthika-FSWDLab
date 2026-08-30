@@ -1,47 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>College Website</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vasavi College of Engineering</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+nav {
+  background-color: #222;
+  padding: 12px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+main {
+  width: 90%;
+  margin: 20px auto;
+}
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.departments {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+article {
+  background-color: #eaf2f8;
+  padding: 15px;
+  flex: 1;
+  min-width: 200px;
+  border-radius: 5px;
+}
+article h3 {
+  color: #003366;
+}
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+</style>
 </head>
 <body>
-
 <header>
-    <h1>Vasavi College of Engineering</h1>
+  <h1>Vasavi College of Engineering</h1>
+  <p>Knowledge . Innovation . Excellence</p>
 </header>
-
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Departments</a>
-    <a href="#">Admissions</a>
-    <a href="#">Contact</a>
+  <a href="#home">Home</a>
+  <a href="#departments">Departments</a>
+  <a href="#news">Latest News</a>
+  <a href="#contact">Contact</a>
 </nav>
-
 <main>
-
-<section>
-    <h2>Departments</h2>
-    <ul>
-        <li>Computer Science and Engineering</li>
-        <li>Electronics and Communication Engineering</li>
-        <li>Mechanical Engineering</li>
-        <li>IT</li>
-        <li>Civil Engineering</li>
-      
-    </ul>
-</section>
-
-<article>
+  <section id="home">
+    <h2>Welcome to Vasavi College of Engineering</h2>
+    <p>Vasavi College of Engineering is committed to providing quality education, developing technical skills, and encouraging innovation among students.</p>
+  </section>
+  <section id="departments">
+    <h2>Our Departments</h2>
+    <div class="departments">
+      <article>
+        <h3>Computer Science</h3>
+        <p>Offers undergraduate and postgraduate programs in computer science and information technology.</p>
+      </article>
+      <article>
+        <h3>Electronics & Communication</h3>
+        <p>Provides education in electronics, communication systems, and modern technologies.</p>
+      </article>
+      <article>
+        <h3>Mechanical Engineering</h3>
+        <p>Focuses on design, manufacturing, robotics, and mechanical systems.</p>
+      </article>
+      <article>
+        <h3>Civil Engineering</h3>
+        <p>Covers construction, structural engineering, transportation, and infrastructure development.</p>
+      </article>
+    </div>
+  </section>
+  <section id="news">
     <h2>Latest News</h2>
-    <p>Admissions open for the academic year 2026-27.</p>
-    <p>Annual Technical Fest will be conducted next month.</p>
-</article>
-
+    <article>
+      <h3>Annual College Fest 2026</h3>
+      <p>The annual college fest will be held on September 15, 2026. Students are invited to participate in various cultural and technical events.</p>
+    </article>
+    <article>
+      <h3>Admissions Open</h3>
+      <p>Applications are now open for the 2026-27 academic year. Visit the college office for more information.</p>
+    </article>
+    <article>
+      <h3>Campus Placement Drive</h3>
+      <p>Leading companies will conduct campus recruitment drives for final-year students this month.</p>
+    </article>
+  </section>
 </main>
-
-<footer>
-    <p>&copy; 2026  Vasavi College of Engineering</p>
+<footer id="contact">
+  <p>&copy; 2026 Vasavi College of Engineering. All Rights Reserved.</p>
+  <p>Email: info@vce.ac.in | Phone: +91 98765 43210</p>
+  <p>123 College Road, Hyderabad, India</p>
 </footer>
-
 </body>
 </html>
