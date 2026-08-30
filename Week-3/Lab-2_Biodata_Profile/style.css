@@ -35,4 +35,63 @@ section h2 {
 }
 .profile {
   display: flex;
-  align-items
+  align-items: center;
+  gap: 30px;
+}
+.profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #0066cc;
+  object-fit: cover;
+}
+.details p {
+  margin: 10px 0;
+}
+.details strong {
+  display: inline-block;
+  width: 150px;
+  color: #003366;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: #003366;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f0f5fa;
+}
+ul {
+  line-height: 1.8;
+}
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .details strong {
+    display: block;
+    width: auto;
+  }
+  table {
+    font-size: 12px;
+  }
+}
