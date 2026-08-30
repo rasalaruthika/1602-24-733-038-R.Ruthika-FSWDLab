@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Elective Registration</title>
+</head>
+<body>
+
+    <h2>Open Elective Course Selection</h2>
+
+    <form>
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="rollno">Roll Number:</label>
+        <input type="text" id="rollno" name="rollno" required>
+        <br><br>
+
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch">
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="mech">Mechanical</option>
+            <option value="civil">Civil</option>
+        </select>
+        <br><br>
+
+        <label>Select Open Elective:</label>
+        <br>
+
+        <input type="radio" id="ai" name="elective" value="AI">
+        <label for="ai">Artificial Intelligence</label>
+        <br>
+
+        <input type="radio" id="iot" name="elective" value="IoT">
+        <label for="iot">Internet of Things</label>
+        <br>
+
+        <input type="radio" id="cloud" name="elective" value="Cloud">
+        <label for="cloud">Cloud Computing</label>
+        <br>
+
+        <input type="radio" id="cyber" name="elective" value="Cyber Security">
+        <label for="cyber">Cyber Security</label>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>
